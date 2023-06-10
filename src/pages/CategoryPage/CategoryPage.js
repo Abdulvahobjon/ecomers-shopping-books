@@ -9,7 +9,7 @@ const CategoryPage = () => {
     const dispatch = useDispatch();
     const {id} = useParams();
     const {catProductSingle: products, catProductSingleStatus: status} = useSelector((state) => state.category);
-
+  
     useEffect(() => {
       dispatch(fetchProductsByCategory(id, 'single'));
       // eslint-disable-next-line react-hooks/exhaustive-deps

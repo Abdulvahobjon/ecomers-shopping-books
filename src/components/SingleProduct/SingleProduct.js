@@ -27,9 +27,9 @@ const SingleProduct = () => {
         newQty = 1;
       }
       return newQty;
-    })
+    }) 
   }
-
+ 
   const addToCartHandler = (product) => {
     let totalPrice = qty * product.price;
     const tempProduct = {
