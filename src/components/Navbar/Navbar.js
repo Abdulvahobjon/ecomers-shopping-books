@@ -24,11 +24,11 @@ const Navbar = () => {
         <div className = "container">
           <div className = "navbar-top flex flex-between">
               <Link to = "/" className = "navbar-brand">
-                <span className = "text-regal-blue">Shopping</span><span className='text-gold'>Hub.</span>
+                <span className = "text-regal-blue">Kitob</span><span className='text-gold'>Do'kon.</span>
               </Link>
 
               <form className = "navbar-search flex">
-                <input type = "text" placeholder='Search here ...' />
+                <input type = "text" placeholder='Qidiruv ...' />
                 <button type = "submit" className = "navbar-search-btn">
                   <i className = "fas fa-search"></i>
                 </button>
@@ -39,7 +39,7 @@ const Navbar = () => {
                   <span className = "btn-ico">
                     <i className = "fas fa-shopping-cart"></i>
                   </span>
-                  <div className='btn-txt fw-5'>Cart
+                  <div className='btn-txt fw-5'>Karta
                     <span className='cart-count-value'>{totalItems}</span>
                   </div>
                 </Link>
