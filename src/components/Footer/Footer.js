@@ -14,13 +14,13 @@ const Footer = () => {
                   <span>
                     <i className="fas fa-phone"></i>
                   </span>
-                  <span className="fs-15">+678 004 5754</span>
+                  <a target="_blank" href="tell: +998975911441" className="fs-15"> +998975911441</a>
                 </li>
                 <li>
                   <span>
                     <i className="fas fa-envelope"></i>
                   </span>
-                  <span className="fs-15">info@shophub.com</span>
+                  <a target="_blank" href="https://t.me/Zamzam_books" className="fs-15"> @Zamzam_books</a>
                 </li>
               </ul>
             </div>

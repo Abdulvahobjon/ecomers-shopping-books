@@ -4,9 +4,26 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCategories } from '../../store/categorySlice';
 import { getCartTotal } from '../../store/cartSlice';
+import imgLogo from '../../assets/images/zamzam.png'
 
 const Navbar = () => {
   const dispatch = useDispatch();
+  let arr  = [
+    {
+      id: 1,
+      title: "o'zbak adabyotlari"
+    },
+     {
+      id: 2,
+      title: "Jahon adabyotlari"
+    },
+     {
+      id: 3,
+      title: "Bolalar adabyoti"
+    },
+    
+
+  ]
   const {data: categories} = useSelector((state) => state.category);
   const {totalItems} = useSelector((state => state.cart));
 
@@ -24,7 +41,7 @@ const Navbar = () => {
         <div className = "container">
           <div className = "navbar-top flex flex-between">
               <Link to = "/" className = "navbar-brand">
-                <span className = "text-regal-blue">Kitob</span><span className='text-gold'>Do'kon.</span>
+                <img style={{height: '50px'}} src={imgLogo} alt="" />
               </Link>
 
               <form className = "navbar-search flex">
@@ -54,8 +71,8 @@ const Navbar = () => {
                 <i className='fas fa-times'></i>
               </button>
               {
-                categories.map(category => (
-                  <li key = {category.id}><Link to = {`/category/${category.id}`} className = "nav-link text-white" onClick={() => setIsSidebarOpen(false)}>{category.name}</Link></li>
+                arr.map(category => (
+                  <li key = {category.id}><Link to = {`/category/${category.id}`} className = "nav-link text-white" onClick={() => setIsSidebarOpen(false)}>{category.title}</Link></li>
                 ))
               }
             </ul>
