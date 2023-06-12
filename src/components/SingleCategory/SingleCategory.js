@@ -26,7 +26,7 @@ const SingleCategory = ({products, status}) => {
             <div className='container'>
                 <div className='cat-single-content'>
                     <div className='section-title'>
-                        <h3 className='text-uppercase fw-7 text-regal-blue ls-1'>Ikkinchi bo'lim kitoblar</h3>
+                        <h3 className='text-uppercase fw-7 text-regal-blue ls-1'>Uchinchi  bo'lim kitoblar</h3>
                     </div>
                     <div className='product-items grid'>
                         {
