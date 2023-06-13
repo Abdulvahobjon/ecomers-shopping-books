@@ -7,7 +7,7 @@ import Error from '../Error/Error';
 import Loader from '../Loader/Loader';
 import {STATUS} from "../../utils/status";
 
-const SingleCategory = ({products, status}) => {
+const SingleCategory = ({products, status , title}) => {
     const dispatch = useDispatch();
     const {isModalVisible} = useSelector((state) => state.modal);
 
@@ -26,7 +26,7 @@ const SingleCategory = ({products, status}) => {
             <div className='container'>
                 <div className='cat-single-content'>
                     <div className='section-title'>
-                        <h3 className='text-uppercase fw-7 text-regal-blue ls-1'>Uchinchi  bo'lim kitoblar</h3>
+                        <h3 className='text-uppercase fw-7 text-regal-blue ls-1'>{title}</h3>
                     </div>
                     <div className='product-items grid'>
                         {
